@@ -1,8 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: ["@babel/polyfill", "./src/index.js"],
   output: {
     filename: "app.bundle.js",
+    publicPath: "/",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -22,5 +24,10 @@ module.exports = {
         },
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: {
+      disableDotRule: true,
+    },
   },
 };
