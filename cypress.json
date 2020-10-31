@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://curso-platzi-react-avanzado-2liftryol.vercel.app/",
+    "chromeWebSecurity": false,
+    "viewportWidth": 500,
+    "viewportHeight": 800
+}
